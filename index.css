@@ -1,0 +1,405 @@
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap);
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+header .header-inner .container #logo {
+  font-family: "Indie Flower", cursive;
+  font-size: 36px;
+}
+
+header .header-inner .container {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: space-around;
+}
+
+header {
+  height: 100px;
+  left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+#about .about-inner {
+  margin: 20px auto 0;
+  padding: 20px;
+  width: 980px;
+}
+
+#about #introduction {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 36px;
+  font-weight: 600;
+  height: 450px;
+  line-height: 1.5;
+  margin-top: 0;
+  text-align: center;
+}
+
+#about #introduction .typeit {
+  height: 120px;
+  margin-bottom: 16px;
+}
+#about #introduction p {
+  font-size: 20px;
+  font-weight: 400;
+}
+#about #profile {
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
+  padding-bottom: 40px;
+}
+#about #profile h2 {
+  margin: 20px 0 30px;
+}
+#about #profile .profile-inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+#about #profile .profile-img {
+  background-image: url(media/profileImg.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  height: 360px;
+  width: 280px;
+}
+#about #profile .profile-list {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  height: 360px;
+  width: 540px;
+}
+#about #profile .profile-list ul {
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: 480px;
+}
+#about #profile .profile-list ul li {
+  align-items: center;
+  display: flex;
+  margin-bottom: 16px;
+}
+#about #profile .profile-list ul li span {
+  padding-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  z-index: 1;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#skills {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#skills ul {
+  margin-top: 40px;
+}
+#skills ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 980px;
+  flex-direction: column;
+}
+#skills ul li .skill-name {
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: flex-start;
+  width: 120px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#skills ul li .ability-bar {
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 32px;
+  justify-content: center;
+  padding: 0 1px;
+  width: 1000px;
+}
+#skills ul li .ability-bar .ability-percent {
+  align-items: center;
+  -webkit-animation: SkillUp 4s linear;
+  animation: SkillUp 4s linear;
+  background: linear-gradient(90deg, #fee9b2, #ffc898);
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.ability-percent-wrap-Java {
+  width: 60%;
+}
+.ability-percent-wrap-html,
+.ability-percent-wrap-css3 {
+  width: 50%;
+}
+.ability-percent-wrap-javaScript {
+  width: 40%;
+}
+
+.ability-percent-wrap-jQuery {
+  width: 30%;
+}
+
+.ability-percent-wrap-SQL {
+  width: 40%;
+}
+
+section {
+  border-bottom: 2px dashed #ceb8b8;
+  padding: 100px 0;
+}
+#projects .projects-grid {
+  grid-gap: 10px 10px;
+  display: grid;
+  gap: 10px 10px;
+  grid-auto-rows: 280px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  margin: 20px auto 0;
+  width: 980px;
+}
+
+.flip {
+  width: 100%;
+  height: 350px;
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.4s;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  width: 320px;
+  height: 350px;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.projects-item .project-front:hover .info {
+  align-items: center;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: center;
+  width: 70%;
+  z-index: 1;
+}
+.projects-item {
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: 1.8s;
+  width: 100%;
+}
+
+img {
+  width: 320px;
+  height: 280px;
+}
+
+.projects-item .project-back .back-inner {
+  margin-bottom: 12px;
+}
+
+.projects-item .project-back .detail p {
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.projects-item .project-back .time {
+  display: flex;
+}
+
+.projects-item .project-back h4 {
+  font-style: italic;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+
+
+.projects-item .project-back .tech h4 {
+  margin-bottom: 8px;
+}
+.projects-item .project-back .tech ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-item .project-back .tech ul li {
+  line-height: 1.2;
+  margin-right: 8px;
+}
+
+.projects-item .project-back .work h4 {
+  margin-bottom: 8px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.projects-item .project-back .work ul li {
+  line-height: 1.2;
+  margin-right: 6px;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.projects-grid .back .btn-group button {
+  background-color: #ffc3c3;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 4px 8px;
+  transition: all .2s linear;
+}
+
