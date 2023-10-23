@@ -195,7 +195,6 @@ header {
 a {
   text-decoration: none;
   color: #000;
-  z-index: 1;
 }
 
 section h2 {
@@ -228,7 +227,6 @@ section h2 {
   justify-content: flex-start;
   width: 120px;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 #skills ul li .ability-bar {
@@ -241,12 +239,13 @@ section h2 {
   justify-content: center;
   padding: 0 1px;
   width: 1000px;
+  margin-bottom: 20px;
 }
 #skills ul li .ability-bar .ability-percent {
   align-items: center;
   -webkit-animation: SkillUp 4s linear;
   animation: SkillUp 4s linear;
-  background: linear-gradient(90deg, #fee9b2, #ffc898);
+  background: linear-gradient(90deg, #fee9b2, #f8be8b);
   border-radius: 0 15px 15px 0;
   display: flex;
   height: 30px;
@@ -266,7 +265,7 @@ section h2 {
 }
 
 .ability-percent-wrap-jQuery {
-  width: 30%;
+  width: 20%;
 }
 
 .ability-percent-wrap-SQL {
@@ -291,27 +290,36 @@ section {
 
 .flip {
   width: 100%;
-  height: 350px;
+  height: 300px;
   display: flex;
+  flex-direction: column;
 }
 
 .card {
   width: 100%;
-  height: 100%;
+  height: 300px;
   position: relative;
   transition: 0.4s;
   transform-style: preserve-3d;
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
-  width: 320px;
-  height: 350px;
+  width: 100%;
+  height: 300px;
   backface-visibility: hidden;
 }
 
 .back {
   transform: rotateY(180deg);
+}
+
+.back a {
+  pointer-events: none;
+}
+.back .specific-a-class {
+  pointer-events: none;
 }
 
 .projects-item .project-front:hover .info {
@@ -359,8 +367,6 @@ img {
   margin-right: 10px;
 }
 
-
-
 .projects-item .project-back .tech h4 {
   margin-bottom: 8px;
 }
@@ -392,7 +398,7 @@ ul {
   box-sizing: border-box;
 }
 
-.projects-grid .back .btn-group button {
+/* .projects-grid .back .btn-group button {
   background-color: #ffc3c3;
   border: none;
   border-radius: 12px;
@@ -400,6 +406,10 @@ ul {
   cursor: pointer;
   margin-right: 10px;
   padding: 4px 8px;
-  transition: all .2s linear;
-}
+  transition: all 0.2s linear;
+} */
 
+.btn-group {
+  position: relative;
+  top: 320px;
+}
