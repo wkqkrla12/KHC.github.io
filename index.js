@@ -8,10 +8,6 @@ flipCard1.addEventListener("click", (e) => {
   card1.classList.toggle("back");
 });
 
-sourceCodeButton.addEventListener("click", (e) => {
-  e.stopPropagation();
-});
-
 flipCard2.addEventListener("click", (e) => {
   console.log("flipped");
   card2.classList.toggle("back");
