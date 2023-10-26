@@ -49,7 +49,8 @@ flip.addEventListener("click", (e) => {
 
       let projectLinkDiv = document.createElement("div");
       let link = document.createElement("a");
-      link.href = "https://wkqkrla12.github.io/portfolio/";
+      // link.href = "https://wkqkrla12.github.io/portfolio/";
+      link.href = "https://github.com/hanHappy/MECHOORI";
       projectLinkDiv.style.width = "290px";
       projectLinkDiv.style.height = "30px";
       projectLinkDiv.style.position = "relative";
