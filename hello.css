@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap);
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.bubbles {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  z-index: -9999;
+}
+.bubbles span {
+  -webkit-animation: bubbelUp 15s linear infinite;
+  animation: bubbelUp 15s linear infinite;
+  border-radius: 50%;
+  height: 7vw;
+  overflow: hidden;
+  width: 7vw;
+}
+.bubbles span.purple {
+  background-color: #d9d7f1;
+}
+.bubbles span.yellow {
+  background-color: #fffdde;
+}
+.bubbles span.green {
+  background-color: #e7fbbe;
+}
+.bubbles span.pink {
+  background-color: #ffcbcb;
+}
+.bubbles span.blue {
+  background-color: #d6e5fa;
+}
+.bubbles span.b1 {
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.bubbles span.b2 {
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+}
+.bubbles span.b3 {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
+.bubbles span.b4 {
+  -webkit-animation-duration: 7.5s;
+  animation-duration: 7.5s;
+}
+.bubbles span.b5 {
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+}
+/*# sourceMappingURL=main.740de266.css.map*/
