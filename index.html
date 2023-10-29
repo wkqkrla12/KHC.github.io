@@ -20,6 +20,11 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js" defer></script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="form-submission-handler.js"
+    ></script>
   </head>
 
   <body>
@@ -306,36 +311,21 @@
                     <p>Mechoori</p>
                   </div>
                 </div>
-
-                <!-- <div class="project-back">
-                  <div>hello</div>
-                  <div>기간</div>
-                  <div>한 파트</div>
-                  <div class="project-link">
-                    <a href="https://wkqkrla12.github.io/portfolio/"></a>
+              </div>
+            </div>
+            <div class="flip-portfolio">
+              <div class="projects-item-portfolio">
+                <div class="project-front-portfolio">
+                  <div class="info">
+                    <p>portfolio</p>
                   </div>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
+            
         </section>
-        <!-- <section id="contact">
-          <h2>Contact</h2>
-            <div class="contact-inner contact-right">
-              <form action="" method="post">
-                <input type="text" name="name" placeholder="Name" />
-                <input type="text" name="title" placeholder="Title" />
-                <textarea
-                  name="message"
-                  placeholder="Message"
-                  rows="12"
-                  cols="30"
-                ></textarea>
-                <button type="submit">Send</button>
-              </form>
-            </div>
-          </div>
-        </section> -->
+       
         <section id="contact">
           <div class="contact-inner contact-left">
             <h2>CONTACT ✉</h2>
@@ -344,9 +334,11 @@
           </div>
           <div class="contact-inner contact-right">
             <form
-              action="MAILTO:wkqkrla12@gmail.com"
+              action="https://script.google.com/macros/s/AKfycbxeZ0-Vh11isxtgsCfwfp5i0E1WTiUgQr6eH156rpoM0jiYpupz0Y4lgPsnVQREfYIw/exec"
               method="post"
-              enctype="text/plain"
+              enctype="application/x-www-form-urlencoded"
+              data-email="wkqkrla12@gmail.com"
+              class="gform"
             >
               <input
                 type="text"
@@ -366,6 +358,10 @@
                 autocomplete="off"
               ></textarea
               ><button type="submit">SEND</button>
+              <div style="display:none" class="thankyou_message">
+                <p>연락주셔서 감사합니다. 빠른 시일 내에 답변 드리겠습니다🚀</p>
+                </h2>
+               </div>
             </form>
           </div>
         </section>

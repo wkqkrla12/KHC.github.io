@@ -213,7 +213,7 @@ header .header-inner .container nav {
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  bottom: 170px;
+  bottom: 245px;
   left: 340px;
 }
 
@@ -321,7 +321,10 @@ ul {
   justify-items: center;
   margin: 20px auto 0;
   width: 980px;
+  margin-top: 50px;
 }
+
+.projects-item-portfolio,
 .projects-item {
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.18);
   cursor: pointer;
@@ -333,6 +336,7 @@ ul {
   transition: transform 1s;
 }
 
+.flip-portfolio,
 .flip {
   background: #fff;
   height: 280px;
@@ -340,21 +344,34 @@ ul {
   width: 320px;
 }
 
-.project-front {
+.project-front-portfolio {
   backface-visibility: hidden;
   height: 100%;
   position: absolute;
   width: 100%;
-  background-image: url(media/profileImg.jpg);
+  background-image: url(media/port.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
 
+.project-front {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-image: url(media/mechoori.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.projects-item-portfolio .project-front-portfolio .info,
 .projects-item .project-front .info {
   display: none;
 }
 
+.project-back-portfolio,
 .project-back {
   background: #fff;
   font-size: 12px;
@@ -389,7 +406,7 @@ ul {
 }
 
 #contact .contact-left .img {
-  background-image: url(/portfolio/static/media/letter.7900b7d….jpg);
+  background-image: url(media/111.jpg);
   background-position: 50%;
   background-size: cover;
   height: 260px;
