@@ -146,6 +146,7 @@ section {
     height: 450px;
     line-height: 2;
     margin-top: 0;
+    margin-right: 120px;
   }
 
   #about #introduction .typeit {
@@ -177,17 +178,17 @@ section {
     padding: 40px 40px;
     box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
 
-    margin: 40px 240px;
+    margin: 40px 300px;
   }
 
   #about .profile-img {
     border-radius: 50%;
     display: flex;
-
     background-color: #fff;
     padding-bottom: 40px;
     width: 400px;
-    justify-content: center;
+    flex-direction: column;
+    margin-left: 150px
   }
   #about #profile .profile-list {
     color: rgba(0, 0, 0, 0.7);
@@ -213,9 +214,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
-    bottom: 245px;
-    left: 340px;
   }
 
   a {
@@ -394,6 +392,7 @@ section {
     height: 260px;
     margin: 0 auto;
     width: 300px;
+
   }
   #contact .contact-inner {
     display: flex;
